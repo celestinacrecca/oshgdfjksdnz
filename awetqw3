@@ -1,0 +1,121 @@
+//IT112 - Group Activity 1
+#include <stdio.h>
+int main(void){
+int destination, choice, bus, fare, y, change, cash;
+printf("=========================================\n");
+printf("          Welcome to Bus Station\n");
+printf("=========================================\n");
+printf("\n+Travel Location+\n");
+printf("[1]Valencia\t[2]Maramag\t[3]Davao");
+printf("\nSelect your destination: ");
+scanf("%d", &destination);
+printf("\n+Select your Bus+:\n");
+          printf("[1]Rural Tours\t[2]Super V\t[3]Pabama");
+          printf("\nEnter your Desired Bus: ");
+          scanf("%d", &bus);
+          printf("\n\n");
+    switch(destination){
+      case 1:
+          if(bus == 1) {
+          printf("Malaybalay to Valencia\n");
+          printf("Distance: 44km\n");
+          printf("Fare: Php 60\n", fare = 60);
+          printf("Bus: Rural Tours\n");
+          }
+          else if(bus == 2) {
+          printf("Malaybalay to Valencia\n");
+          printf("Distance: 44km\n");
+          printf("Fare: Php 60\n", fare = 60);
+          printf("Bus: Super V\n");
+          }
+                    else if(bus == 3) {
+          printf("Malaybalay to Valencia\n");
+          printf("Distance: 44km\n");
+          printf("Fare: Php 60\n", fare = 60);
+          printf("Bus: Pabama\n");
+          }
+          printf("Buy Ticket Y/N?\t");
+          scanf(" %c",&y);
+          if( y == 'Y' || y == 'y'){
+          printf("\nInput Fare:");
+          scanf("%d",&cash);{
+          change = cash - fare;
+          }
+          printf("\nChange: Php%d", change);
+          printf("\nYou have purchased the ticket, Thank you!");
+          }
+          
+          else if(y == 'N' || y == 'n'){
+            printf("\n\nTicket Booking Cancelled!!\n\n\n\n\n\n\n\n\n");
+          }
+          break;
+    case 2:
+          if(bus == 1) {
+          printf("Malaybalay to Maramag\n");
+          printf("Distance: 57km\n");
+          printf("Fare: Php 80\n", fare = 80);
+          printf("Bus: Rural Tours\n");
+          }
+          else if(bus == 2) {
+          printf("Malaybalay to Maramag\n");
+          printf("Distance: 57km\n");
+          printf("Fare: Php 80\n", fare = 80);
+          printf("Bus: Super V\n");
+          }
+                    else if(bus == 3) {
+          printf("Malaybalay to Maramag\n");
+          printf("Distance: 44km\n");
+          printf("Fare: Php 80\n", fare = 80);
+          printf("Bus: Pabama\n");
+          }
+          printf("Buy Ticket Y/N?\t");
+          scanf(" %c",&y);
+          if( y == 'Y' || y == 'y'){
+          printf("\nInput Fare:");
+          scanf("%d",&cash);{
+          change = cash - fare;
+          }
+          printf("\nChange: Php%d", change);
+          printf("\nYou have purchased the ticket, Thank you!");
+          }
+          
+          else if(y == 'N' || y == 'n'){
+            printf("\n\nTicket Booking Cancelled!!\n\n\n\n\n\n\n\n\n");
+          }
+          break;
+    case 3:
+          if(bus == 1) {
+          printf("Malaybalay to Davao\n");
+          printf("Distance: 44km\n");
+          printf("Fare: Php 60\n", fare = 60);
+          printf("Bus: Rural Tours\n");
+          }
+          else if(bus == 2) {
+          printf("Malaybalay to Davao\n");
+          printf("Distance: 164km\n");
+          printf("Fare: Php 150\n", fare = 150);
+          printf("Bus: Super V\n");
+          }
+                    else if(bus == 3) {
+          printf("Malaybalay to Davao\n");
+          printf("Distance: 164km\n");
+          printf("Fare: Php 150\n", fare = 150);
+          printf("Bus: Pabama\n");
+          }
+          printf("Buy Ticket Y/N?\t");
+          scanf(" %c",&y);
+          if( y == 'Y' || y == 'y'){
+          printf("\nInput Fare:");
+          scanf("%d",&cash);{
+          change = cash - fare;
+          }
+          printf("\nChange: Php%d", change);
+          printf("\nYou have purchased the ticket, Thank you!");
+          }
+          
+          else if(y == 'N' || y == 'n'){
+            printf("\n\nTicket Booking Cancelled!!\n\n\n\n\n\n\n\n\n");
+          }
+          break;
+    }
+}
